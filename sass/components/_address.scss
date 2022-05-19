@@ -1,0 +1,23 @@
+.address {
+    &__text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-color);
+    margin-bottom: 9px;
+    }
+
+    &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    }
+
+    &__link + &__link {
+    margin-top: 6px;
+    }
+}

@@ -1,0 +1,21 @@
+.mailto-icon,
+.tel-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    /* color: red; */
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-link+.header-link {
+    margin-left: 50px;
+}
+
+.header-address-link {
+    display: flex;
+    margin-left: auto;
+}
