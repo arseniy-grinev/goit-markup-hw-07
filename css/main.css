@@ -102,12 +102,16 @@ body {
   align-items: center;
 }
 
-.header-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-nav-item {
   color: var(--header-nav-color);
+}
+
+.header-nav-item:hover, .header-nav-item:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-nav-link {
@@ -127,15 +131,16 @@ body {
   color: inherit;
   display: flex;
   align-items: center;
-  /* margin-top: 32px;
-  margin-bottom: 32px; */
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-item:hover,
-.header-nav-item:focus {
+.header-link:hover, .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-link + .header-link {
+  margin-left: 50px;
 }
 
 .nav-current {
@@ -161,15 +166,6 @@ body {
   height: 12px;
   margin-right: 10px;
   /* color: red; */
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.header-link + .header-link {
-  margin-left: 50px;
 }
 
 .header-address-link {
@@ -280,8 +276,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: solid 1px var(--accent-color);
   fill: var(--accent-color);
 }
@@ -410,8 +405,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--icon-accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -765,14 +759,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-input:focus-visible {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-
-.modal-input-coment:focus,
-.modal-input-coment:focus-visible {
+.modal-input:focus, .modal-input:focus-visible {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -797,6 +784,11 @@ body {
   resize: none;
   color: rgba(117, 117, 117, 0.5);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-coment:focus, .modal-input-coment:focus-visible {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .input-label {
@@ -884,8 +876,7 @@ body {
   /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--accent-color);
 }
 

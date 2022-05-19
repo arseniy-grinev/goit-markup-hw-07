@@ -20,14 +20,14 @@
     display: inline-block;
     border: 2px solid var(--sub-title-color);
     border-radius: 2px;
+    .modal-checkbox:checked + & {
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(../images/icons/check.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        box-sizing: border-box;
+    }
 }
 
-.modal-checkbox:checked+.confirm-check {
-    border: 2px solid var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(../images/icons/check.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    box-sizing: border-box;
-}

@@ -13,12 +13,13 @@
     justify-content: center;
     align-items: center;
     /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    fill: var(--accent-color);
-}
+
 
 .icon-close {
     position: absolute;
